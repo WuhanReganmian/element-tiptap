@@ -12,7 +12,7 @@
       :visible.sync="editLinkDialogVisible"
       :append-to-body="true"
       width="400px"
-      custom-class="el-tiptap-edit-link-dialog"
+      class="el-tiptap-edit-link-dialog"
     >
       <el-form :model="linkAttrs" label-position="right" size="small">
         <el-form-item

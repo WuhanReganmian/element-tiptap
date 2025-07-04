@@ -22,12 +22,12 @@ export default defineComponent({
     CommandButton,
   },
 
-  props: {
-    editor: {
-      type: Editor,
-      required: true,
-    },
-  },
+  // props: {
+  //   editor: {
+  //     type: Editor,
+  //     required: true,
+  //   },
+  // },
 
   setup() {
     const t = inject('t');

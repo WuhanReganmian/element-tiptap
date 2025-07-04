@@ -5,13 +5,15 @@
     popper-class="el-tiptap-dropdown-popper"
     @command="toggleHeading"
   >
-    <command-button
-      :enable-tooltip="enableTooltip"
-      :is-active="editor.isActive('heading')"
-      :tooltip="t('editor.extensions.Heading.tooltip')"
-      :disabled="isCodeViewMode"
-      icon="heading"
-    />
+    <div>
+      <command-button
+        :enable-tooltip="enableTooltip"
+        :is-active="editor.isActive('heading')"
+        :tooltip="t('editor.extensions.Heading.tooltip')"
+        :disabled="isCodeViewMode"
+        icon="heading"
+      />
+    </div>
     <template #dropdown>
       <el-dropdown-menu slot="dropdown" class="el-tiptap-dropdown-menu">
         <el-dropdown-item

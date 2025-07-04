@@ -20,12 +20,12 @@ export interface CodeViewOptions {
 const CodeView = Extension.create<CodeViewOptions>({
   name: 'codeView',
 
-  defaultOptions: {
-    codemirror: null,
-    codemirrorOptions: {
-      ...DEFAULT_CODEMIRROR_OPTIONS,
-    },
-  },
+  // defaultOptions: {
+  //   codemirror: null,
+  //   codemirrorOptions: {
+  //     ...DEFAULT_CODEMIRROR_OPTIONS,
+  //   },
+  // },
 
   onBeforeCreate() {
     if (!this.options.codemirror) {
