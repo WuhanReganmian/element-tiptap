@@ -37,6 +37,7 @@ export default defineComponent({
     tooltip: {
       type: String,
       required: true,
+      default: '',
     },
 
     enableTooltip: {

@@ -1,4 +1,5 @@
-@import './variables.scss';
+@use "sass:color";
+@use './variables.scss' as *;
 
 .el-tiptap-editor {
   $root: &;
@@ -535,6 +536,6 @@
   }
 
   &__characters {
-    color: lighten($regular-text-color, 20%);
+    color: color.scale($regular-text-color, $lightness: 20%);
   }
 }

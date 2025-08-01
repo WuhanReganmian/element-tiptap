@@ -1,10 +1,12 @@
 <template>
-  <command-button
-    :command="removeImage"
-    :enable-tooltip="enableTooltip"
-    :tooltip="t('editor.extensions.Image.buttons.remove_image.tooltip')"
-    icon="trash-alt"
-  />
+  <span>
+    <command-button
+      :command="removeImage"
+      :enable-tooltip="enableTooltip"
+      :tooltip="t('editor.extensions.Image.buttons.remove_image.tooltip')"
+      icon="trash-alt"
+    />
+  </span>
 </template>
 
 <script lang="ts">

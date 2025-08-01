@@ -33,6 +33,7 @@ import {
   CodeView,
   Fullscreen,
   History,
+  Mermaid,
 } from 'element-tiptap';
 
 import codemirror from 'codemirror';
@@ -60,14 +61,15 @@ const extensions = [
   TaskList,
   Indent,
   HardBreak,
-  HorizontalRule.configure({ bubble: true }),
-  CodeView.configure({
-    codemirror,
-    codemirrorOptions: {
-      styleActiveLine: true,
-      autoCloseTags: true,
-    },
-  }),
+  Mermaid.configure({ bubble: true }),
+  // HorizontalRule.configure({ bubble: true }),
+  // CodeView.configure({
+  //   codemirror,
+  //   codemirrorOptions: {
+  //     styleActiveLine: true,
+  //     autoCloseTags: true,
+  //   },
+  // }),
   Fullscreen,
   History,
 ];

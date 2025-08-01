@@ -295,6 +295,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-@import '../styles/editor.scss';
-@import '../styles/command-button.scss';
+@use '../styles/editor.scss' as *;
+@use '../styles/command-button.scss' as *;
 </style>
